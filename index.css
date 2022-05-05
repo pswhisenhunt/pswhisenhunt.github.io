@@ -1,0 +1,172 @@
+/*
+    Colors
+    black-ish: #171818
+    white-ish: #faf7ee
+    yellow: #fefe7c
+    blue: #3af2ff
+    pink: #ffb7f0
+*/
+
+/*
+    Fonts
+    font-family: 'Roboto', sans-serif;
+*/
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 48px;
+    background-color: #171818;
+    color: #FAF7EE;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+main {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.link {
+    text-decoration: none;
+    color: #fefe7c;
+    font-weight: 700;
+}
+
+.container-title {
+    display: flex;
+}
+
+.title {
+    font-size: 88px;
+    color: #3AF2FF;
+    margin-bottom: 0;
+}
+
+.images-hand {
+    height: 120px;
+    margin-top: 48px;
+    z-index: -1;
+}
+
+.wave {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+ }
+
+ @keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg);
+    }
+    
+    10% {
+        transform: rotate(14.0deg);
+    }
+
+    20% {
+        transform: rotate(-8.0deg);
+    }
+
+    30% {
+        transform: rotate(14.0deg);
+    }
+
+    40% {
+        transform: rotate(-4.0deg);
+    }
+
+    50% {
+        transform: rotate(10.0deg);
+    }
+    /* reset for a pause before the next wave */
+    60% {
+        transform: rotate(0.0deg);
+    }
+    100% {
+        transform: rotate(0.0deg);
+    }
+ }
+
+.paragraph {
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.images {
+    height: 40px;
+    margin-right: 8px;
+}
+
+.images-peace {
+    opacity: 1;
+    animation: fadeInOpacity 1s ease-in none 1;
+}
+
+.images-love {
+    height: 36px;
+    opacity: 1;
+    animation: fadeInOpacity 2s ease-in none 1;
+}
+
+.images-texas {
+    opacity: 1;
+    animation: fadeInOpacity 3s ease-in none 1;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.images-peace:hover, .images-love:hover, .images-texas:hover {
+    transform: scale(1.1) rotate(-1.5deg);
+}
+
+
+/*
+    Footer
+*/
+
+.container-footer {
+    width: 500px;
+    margin: 0 auto;
+    padding: 8px 0;
+}
+
+.footer-paragraph {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+.footer-icon-container {
+    margin: 0px 24px 0 4px;
+}
+
+.icons-heart {
+    position: absolute;
+    height: 16px;
+    animation-name: grow;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    } 
+    100% {
+        transform: scale(1);
+    }
+}
