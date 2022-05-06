@@ -1,29 +1,24 @@
-/*
-    Colors
-    black-ish: #171818
-    white-ish: #faf7ee
-    yellow: #fefe7c
-    blue: #3af2ff
-    pink: #ffb7f0
-*/
-
-/*
-    Fonts
-    font-family: 'Roboto', sans-serif;
-*/
+:root {
+    --color-yellow: #fefe7c;
+    --color-black: #171818;
+    --color-white: #faf7ee;
+    --color-blue: #3af2ff;
+    --color-pink: #ffb7f0;
+    --font-body: 'Roboto', sans-serif;
+}
 
 body {
     box-sizing: border-box;
     height: 100vh;
     margin: 48px;
-    background-color: #171818;
-    color: #FAF7EE;
-    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-family: var(--font-body);
     font-weight: 100;
     font-size: 16px;
 }
 
-.container-navigation {
+.nav-bar {
     padding: 8px 0;
     max-width: 600px;
     margin: 0 auto;
@@ -34,15 +29,15 @@ body {
     list-style-type: none;
 }
 
-.nav-links .nav-link {
+.nav-link {
     text-decoration: none;
-    color:  #faf7ee;
+    color: var(--color-white);
     margin-right: 48px;
 }
 
-.nav-links .nav-link:hover {
+.nav-link:hover {
     text-decoration: none;
-    color:  #fefe7c;
+    color: var(--color-yellow);
     font-weight: 500;
 }
 
@@ -53,7 +48,7 @@ main {
 
 .link {
     text-decoration: none;
-    color: #fefe7c;
+    color: var(--color-yellow);
     font-weight: 700;
 }
 
@@ -61,18 +56,17 @@ main {
     margin-left: 32px;
 }
 
-
 .container-title {
     display: flex;
 }
 
 .title {
     font-size: 88px;
-    color: #3AF2FF;
+    color: var(--color-blue);
     margin-bottom: 0;
 }
 
-.images-hand {
+.image-hand {
     height: 120px;
     margin-top: 48px;
     z-index: -1;
