@@ -150,8 +150,9 @@ body {
     font-size: var(--extra-small);
     font-family: var(--quicksand-light);
     position: absolute;
+    text-align: center;
     bottom: 0;
-    width: 100%;
+    width: 90%;
     height: 2em;
 }
 
@@ -212,7 +213,7 @@ body {
 
 .cta-link {
     display: block;
-    width: 100%;
+    width: 90%;
     height: 3em;
     position: relative;
     cursor: pointer;
@@ -284,6 +285,10 @@ body {
 
     .cta-link {
         width: 40%;
+    }
+
+    .footer {
+        text-align: left;
     }
 }
 
