@@ -24,6 +24,7 @@
     --large: 2.2em;
     --extra-large: 3.2em;
     --extra-small: 0.8em;
+    --mobile-small: 0.5em;
 }
 
 /* General Styles */
@@ -268,20 +269,39 @@ body {
 }
 
 /* Mobile Styles */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
     .app-container {
-        margin-left: 1.2em;
+        margin-left: 1em;
     }
 
     .main-content {
-        margin-top: 3em;
+        margin-top: -1em;
+    }
+
+    .waving-hand {
+        left: 7.2em;
+    }
+
+    .description {
+        font-size: var(--regular);
+    }
+
+    .logo-link {
+        display: none;
     }
 
     .nav-list {
         gap: 15px;
+        padding: 0;
+    }
+    
+    .nav-list .nav-item .link {
+        color: var(--hot-pink);
+        font-weight: var(--light);
+        font-size: var(--extra-small);
     }
 
-    .cta-link {
-        width: 30%;
+    .footer {
+        font-size: var(--mobile-small);
     }
 }
