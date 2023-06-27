@@ -197,7 +197,7 @@ body {
 
 .cta-button {
   display: block;
-  width: 200px;
+  width: 250px;
   height: 50px;
   line-height: 45px;
   font-size: var(--small);
@@ -205,6 +205,7 @@ body {
   text-decoration: none;
   color: var(--purple);
   border: 2px solid var(--purple);
+  border-radius: 5px;
   letter-spacing: 1px;
   text-align: center;
   position: relative;
@@ -213,7 +214,6 @@ body {
 
 .cta-button-text {
   position: relative;
-  margin-top: 1em;
   z-index: 2;
 }
 
@@ -224,6 +224,7 @@ body {
   left: 0;
   width: 0;
   height: 100%;
+  border-radius: 5px;
   background: var(--multi-color-gradient);
   transition: all .35s;
 }
@@ -326,7 +327,7 @@ body {
 
 .heading-text {
   font-size: var(--medium);
-  margin-bottom: 0.5em;
+  margin-bottom: 0.75em;
 }
 
 .cartoon {
@@ -639,8 +640,6 @@ body {
   }
   .cta-button {
     width: 100%;
-    height: 40px;
-    line-height: 40px;
   }
   .heading-container {
     width: 90%;
