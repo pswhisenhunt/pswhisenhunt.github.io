@@ -80,6 +80,7 @@ html {
 }
 
 body {
+  min-height: 100%;
   color: var(--main-text-color);
 }
 
@@ -90,7 +91,9 @@ body {
 
 .app-container {
   position: relative;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   padding-top: 2em;
   font-family: var(--quicksand-light);
   font-size: var(--regular);
@@ -98,14 +101,8 @@ body {
 }
 
 .main-content {
-  min-height: 90vh;
+  display: flex;
   margin-left: 10em;
-}
-
-.footer {
-  width: 100vw;
-  height: 25px;
-  bottom: 0;
 }
 
 .copyright {
@@ -303,8 +300,8 @@ body {
 
 .heading-container {
   position: relative;
+  width: 35%;
   margin-top: 10em;
-  width: 45%;
 }
 
 .waving-hand-wrapper {
@@ -330,12 +327,18 @@ body {
   margin-bottom: 0.75em;
 }
 
+.graphic-container {
+  position: relative;
+  width: 55%;
+  height: 100vh;
+}
+
 .cartoon {
   width: 40vmin;
   height: 40vmin;
   position: absolute;
-  left: 75%;
-  top: 12em;
+  left: 50%;
+  top: 20%;
   transform: translate(-50%, 0%);
   color: var(--line);
 }
@@ -600,6 +603,25 @@ body {
 *******************/
 
 /* Mobile Styles */
+
+@media screen and (max-width: 1200px) {
+  .main-content {
+    flex-direction: column;
+  }
+  .heading-container {
+    width: 90%;
+  }
+
+  .cta-button {
+    display: none;
+  }
+
+  .cartoon {
+    top: 10%;
+    left: 80%;
+  }
+}
+
 @media screen and (max-width: 1500px) {
   .main-navigation {
     margin-left: 5em;
@@ -623,46 +645,40 @@ body {
     margin-left: 2.5em;
   }
   
-  .cartoon {
-    top: 18em;
-    left: 50%;
-  }
-
   .heading-container {
-    width: 90%;
     margin-top: 3em;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .heading-text {
-    font-size: var(--regular);
-  }
-  .cta-button {
-    width: 100%;
-  }
   .heading-container {
     width: 90%;
-  }
-
-  .cartoon {
-    top: 18em;
-  }
-
-  .app-container {
-    padding-top: 0.5em;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .heading-text {
-    font-size: var(--regular);
+  .heading-container {
+    margin-top: 1em;
   }
+
   .main-navigation {
     margin-left: 2px;
   }
 
   .main-content {
     margin-left: 20px;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .heading-container {
+    margin-top: 1em;
+  }
+  .cta-button {
+    height: 60px;
+    line-height: 50px;
+  }
+  .cartoon {
+    top: 20%;
   }
 }
