@@ -105,9 +105,17 @@ body {
   margin-left: 10em;
 }
 
+.footer {
+  width: 100%;
+  border-top: 1px solid var(--purple);
+}
+
+.footer p {
+  text-align: center;
+  margin-left: -7%;
+}
 .copyright {
   color: var(--purple);
-  margin-left: 2em;
   font-size: 14px;
 }
 
@@ -667,6 +675,9 @@ body {
 
   .main-content {
     margin-left: 20px;
+  }
+  .graphic-container {
+    height: 500px;
   }
 }
 
